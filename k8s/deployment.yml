@@ -20,7 +20,7 @@ spec:
       containers:
       - name: employee-app
 
-        image: YOUR_DOCKERHUB_USERNAME/employee-app:latest
+        image: mamathaberragari/employee-app:latest
 
         ports:
         - containerPort: 8080
