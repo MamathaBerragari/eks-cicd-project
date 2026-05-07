@@ -20,7 +20,7 @@ spec:
       containers:
       - name: employee-app
 
-        image: mamathaberragari/employee-app:5
+        image: mamathaberragari/employee-app:6
 
         ports:
         - containerPort: 8080
