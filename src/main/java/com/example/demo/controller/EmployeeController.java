@@ -16,6 +16,11 @@ public class EmployeeController {
         this.service = service;
     }
 
+    @GetMapping("/")
+    public String home() {
+        return "Employee App Running";
+    }
+
     @PostMapping
     public Employee addEmployee(@RequestBody Employee employee) {
         return service.addEmployee(employee);
