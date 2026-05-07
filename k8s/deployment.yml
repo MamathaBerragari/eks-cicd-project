@@ -20,7 +20,7 @@ spec:
       containers:
       - name: employee-app
 
-        image: mamathaberragari/swiggy-app:11
+        image: mamathaberragari/employee-deatils:11
 
         ports:
         - containerPort: 8080
