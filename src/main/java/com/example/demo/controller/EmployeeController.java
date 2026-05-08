@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin("*")   // 👈 ADD THIS LINE
 @RestController
 @RequestMapping("/employees")
 public class EmployeeController {
@@ -44,9 +45,7 @@ public class EmployeeController {
 
     @DeleteMapping("/{id}")
     public String deleteEmployee(@PathVariable Long id) {
-
         service.deleteEmployee(id);
-
         return "Employee deleted successfully";
     }
 }
