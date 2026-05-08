@@ -9,6 +9,14 @@ import java.util.List;
 @CrossOrigin("*")   // 👈 ADD THIS LINE
 @RestController
 @RequestMapping("/employees")
+@Controller
+public class UiController {
+
+    @GetMapping("/")
+    public String home() {
+        return "forward:/index.html";
+    }
+}
 public class EmployeeController {
 
     private final EmployeeService service;
